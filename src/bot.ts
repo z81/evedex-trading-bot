@@ -46,7 +46,7 @@ async function main() {
 
   const sellOrderResult = await account.createMarketOrderV2({
     instrument,
-    side: evedexSdk.Side.Buy,
+    side: evedexSdk.Side.Sell,
     cashQuantity: notionalUsd,
     leverage,
     timeInForce: evedexSdk.TimeInForce.IOC,
